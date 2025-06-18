@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "img": "https://www.nzc.nz/media/16988/kane-williamson.jpg",
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "position": "Batsman",
+    "type": "Right-Hand-Bat",
+    "price": 600000
+  },
+  {
+    "id": 2,
+    "img": "https://assets.iplt20.com/ipl/IPLHeadshot2022/164.png",
+    "name": "Virat Kohli",
+    "country": "India",
+    "position": "Batsman",
+    "type": "Right-Hand-Bat",
+    "price": 900000
+  },
+  {
+    "id": 3,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlcREU4jwpmV1ccA7PRuCw81VDAQiM9W_WgQ&s",
+    "name": "Mitchel Starc",
+    "country": "Australia",
+    "position": "Bowler",
+    "type": "Left-Arm-Fast",
+    "price": 1500000
+  },
+  {
+    "id": 4,
+    "img": "https://www.iplbetonline.in/wp-content/uploads/2023/04/203-780x780.png",
+    "name": "Sunil Narine",
+    "country": "West Indies",
+    "position": "All-Rounder",
+    "type": "Left-Hand-Bat",
+    "price": 1200000
+  },
+  {
+    "id": 5,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuBAkOyhWV9HCNS4c0RNV2e5NsR_mp1QFokA&s",
+    "name": "Mashrafe",
+    "country": "Bangladesh",
+    "position": "Bowler",
+    "type": "Right-Arm-Fast",
+    "price": 850000
+  },
+  {
+    "id": 6,
+    "img": "https://www.hindustantimes.com/static-content/1y/cricket-logos/players/david-miller.png",
+    "name": "David Miller",
+    "country": "South Africa",
+    "position": "All-Rounder",
+    "type": "Right-Hand-Bat",
+    "price": 1100000
+  },
+  {
+    "id": 7,
+    "img": "https://resources.ecb.co.uk/player-photos/test/800x800/1154.png",
+    "name": "Ben Stokes",
+    "country": "England",
+    "position": "All-Rounder",
+    "type": "Right-Hand-Bat",
+    "price": 1400000
+  },
+  {
+    "id": 8,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2XefcrictPlc3nkaevDt_5ga5XB7jOb5p8Q&s",
+    "name": "Mahmudullah",
+    "country": "Bangladesh",
+    "position": "All-Rounder",
+    "type": "Right-Hand-Bat",
+    "price": 2000000
+  },
+  {
+    "id": 9,
+    "img": "https://static.toiimg.com/photo/119128225.cms",
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "position": "Bowler",
+    "type": "Right-Arm-Leg-Spin",
+    "price": 1000000
+  }
+]
