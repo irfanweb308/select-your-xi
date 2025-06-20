@@ -33,7 +33,7 @@ const Player = ({ player, cp }) => {
 
                 <div className="flex flex-col items-center gap-4 mt-6">
                     <span className="text-lg font-bold">Price: ${price}</span>
-                    <button onClick={() => cp(price)} className="btn btn-active btn-success text-white font-extrabold">Choose Player</button>
+                    <button onClick={() => cp(player)} className="btn btn-active btn-success text-white font-extrabold">Choose Player</button>
                 </div>
             </div>
         </div>
