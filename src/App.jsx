@@ -4,7 +4,8 @@ import Banner from './components/Banner/Banner'
 import Header from './components/Header/Header'
 import Players from './components/Players/Players'
 import { ToastContainer, toast, Bounce } from 'react-toastify';
-import Selected from './components/Selected/Selected'
+
+import Footer from './components/Footer/Footer'
 
 function App() {
   const [coins, setCoins] = useState(0);
@@ -39,15 +40,28 @@ function App() {
 
   }
 
+
   const choosePlayerHandler = (player) => {
 
     const newSelected = [...selected, player]
+
+
     if (selected.length < 6) {
 
       setSelected(newSelected);
       if (coins >= player.price) {
         setCoins(coins - player.price);
-
+        toast.success('Selection successful', {
+          position: "top-center",
+          autoClose: 4000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          transition: Bounce,
+        });
 
       }
       else {
@@ -80,6 +94,13 @@ function App() {
 
 
   }
+  const handleRemove = (id, price) => {
+    const remainingPlayers = selected.filter(select => select.id !== id)
+
+    setCoins(coins + price);
+    setSelected(remainingPlayers);
+  }
+
 
 
   return (
@@ -88,13 +109,14 @@ function App() {
       <Header coins={coins} ></Header>
       <div className='max-w-[1320px] mx-auto'>
         <Banner pass={claimHandler}></Banner>
-        <Players cp={choosePlayerHandler} view={view} handleAvailableClick={handleAvailableClick} handleSelectedClick={handleSelectedClick}
-          playersChosen={selected}></Players>
+        <Players cp={choosePlayerHandler} view={view} handleAvailableClick={handleAvailableClick} handleSelectedClick={handleSelectedClick} playersChosen={selected} handleRemove={handleRemove}></Players>
 
         <ToastContainer></ToastContainer>
 
 
+
       </div>
+      <Footer></Footer>
 
     </>
   )

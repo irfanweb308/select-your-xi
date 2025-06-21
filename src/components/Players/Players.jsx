@@ -3,7 +3,7 @@ import Player from "../Player/Player";
 import Selected from "../Selected/Selected";
 
 
-const Players = ({ cp, view, handleAvailableClick, handleSelectedClick, playersChosen }) => {
+const Players = ({ cp, view, handleAvailableClick, handleSelectedClick, playersChosen,handleRemove }) => {
     const [players, setPlayers] = useState([]);
 
     useEffect(() => {
@@ -35,7 +35,7 @@ const Players = ({ cp, view, handleAvailableClick, handleSelectedClick, playersC
                 </div>
             )}
             {view === "selected" && (
-                <Selected playersChosen={playersChosen}></Selected>
+                <Selected handleAvailableClick={handleAvailableClick} playersChosen={playersChosen} handleRemove={handleRemove}></Selected>
             )}
 
 
